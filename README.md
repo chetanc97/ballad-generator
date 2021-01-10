@@ -1,37 +1,28 @@
-## Welcome to GitHub Pages
+# ballad-generator
 
-You can use the [editor on GitHub](https://github.com/deathstar1/ballad-generator/edit/main/README.md) to maintain and preview the content for your website in Markdown files.
+Generates ballads using Deep learning . Using LSTMS and data of some famous ballads . Generates new ballads and autocompletes with initial given texts .
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+### Want to run these notebooks on your own machine?
 
-### Markdown
+Start by installing [Anaconda](https://www.anaconda.com/distribution/) (or [Miniconda](https://docs.conda.io/en/latest/miniconda.html)), [git](https://git-scm.com/downloads), and if you have a TensorFlow-compatible GPU, install the [GPU driver](https://www.nvidia.com/Download/index.aspx).
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+Next, clone this project by opening a terminal and typing the following commands (do not type the first `$` signs on each line, they just indicate that these are terminal commands):
 
-```markdown
-Syntax highlighted code block
+    $ git clone https://github.com/deathstar1/ballad-generator.git
+    $ cd exploration
 
-# Header 1
-## Header 2
-### Header 3
+If you want to use a GPU, then edit `environment.yml` (or `environment-windows.yml` on Windows) and replace `tensorflow=2.0.0` with `tensorflow-gpu=2.0.0`. Also replace `tensorflow-serving-api==2.0.0` with `tensorflow-serving-api-gpu==2.0.0`.
 
-- Bulleted
-- List
+Next, run the following commands:
 
-1. Numbered
-2. List
+    $ conda env create -f environment.yml # or environment-windows.yml on Windows
+    $ conda activate tf2
+    $ python -m ipykernel install --user --name=python3
 
-**Bold** and _Italic_ and `Code` text
+Finally, start Jupyter:
 
-[Link](url) and ![Image](src)
-```
+    $ jupyter notebook
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
 
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/deathstar1/ballad-generator/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+# Star
+If you liked this , do encourage me with Star 个 [Star](https://github.com/deathstar1/ballad-generator) ⭐️ 
